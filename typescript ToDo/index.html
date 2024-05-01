@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; block-all-mixed-content; upgrade-insecure-requests;">
+  <title>Planning App</title>
+  <link rel="stylesheet" href="style.2.0.css">
+  <link rel="icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+<div id="myDIV" class="header">
+  <h2>To Do List</h2>
+  <input type="text" id="myInput" placeholder="Название..."  autocomplete="off">
+  <button id="create">Создать</button>
+  <button id="deleteListItems">Очистить все</button>
+</div>
+<div class="center-block" id="list">
+<ul id="myUL">
+ 	<li >Элемент 1 <br><span class="date">11.1.2024</span></li>
+        <li >Элемент 2 <br><span class="date">10.1.2024</span></li>
+        <li >Элемент 3 <br><span class="date">9.1.2024</span></li>
+</ul>
+</div>
+<div class="filt">
+<button id="filterDone">Сделано</button>
+<button id="filterNotDone">Не сделано</button>
+<button id="filterAll">Все</button>
+<button id="sortByName">А-Я &#8593;&#8595;</button>
+<button id="sortByDate">Дата &#8593;&#8595;</button>
+</div>
+<div id="empty-message" class="Empty">Не найдено ни одного элемента.</div>
+<div>
+
+</div>
+  <script src="script.js"></script>
+
+<div class="content">
+<footer>
+ Copyright &copy;
+</footer></div>
+</body>
+</html>
